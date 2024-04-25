@@ -1,37 +1,148 @@
+@font-face {
+    font-family: font;
+    src: url(fonts/Inter-Medium.ttf);
+}
+
+
 * {
     padding: 0;
     margin: 0;
-    font-family: sans-serif;
+    box-sizing: border-box;
 }
 
-body , html {
+body {
     overflow-x: hidden;
+    font-family: font, sans-serif;
 }
 
-.navbar {
-    flex-wrap: wrap;
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: flex;
-    width: 100%;    
-    justify-content: space-around;
-    padding: 20px;
+
+/* navbar Design */
+
+.navbar a {
+    color: #F17228;
+    font-weight: bold;
+
 }
 
-.logo {
-    margin-top: 11px;
+.navbar a:hover{
+    color: #F17228;
 }
 
-.header-content {
-    height: 420px;
-    width: 100vw;
-    background-position: bottom;
-    background-size: cover;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    background-color: #fec711;
-    margin-top: 70px;
+.navbar a span {
+    color: #FFB30E;
 }
 
+.navbar i {
+    color: #FFB30E;
+}
+
+.navbar .btn {
+    border: none;
+    color: #000;
+}
+
+.navbar .whiteBtn {
+    padding: 4px 22px;
+    margin-left: 20px;
+    background-color: #fff;
+    border: .1875rem solid #fff;
+    text-transform: capitalize;
+    box-shadow: 2px 3px 3px -0.2px #FFAE00;
+}
+
+
+
+
+
+
+
+@media (max-width:991px) {
+    .navbar {
+        font-size: 12px;
+    }
+
+    .navbar .navbar-brand img {
+        height: 14px;
+    }
+
+    .navbar .navbar-brand {
+        font-size: 12px;
+    }
+
+    .navbar .container .btn {
+        font-size: 12px;
+    }
+
+    .navbar .whiteBtn {
+        padding: 4px 19px;
+    }
+
+}
+
+
+@media (max-width:768px) {
+    .navbar {
+        font-size: 8px;
+    }
+
+    .navbar .navbar-brand img {
+        height: 9px;
+    }
+
+    .navbar .navbar-brand {
+        font-size: 8px;
+    }
+
+    .navbar .container .btn {
+        font-size: 8px;
+    }
+
+    .navbar .whiteBtn {
+        padding: 4px 16px;
+    }
+}
+
+@media (max-width:514px) {
+    .navbar {
+        font-size: 5px;
+    }
+
+    .navbar .navbar-brand img {
+        height: 8px;
+    }
+
+    .navbar .navbar-brand {
+        font-size: 5px;
+    }
+
+    .navbar .container .btn {
+        font-size: 5px;
+    }
+
+    .navbar .whiteBtn {
+        padding: 3px 13px;
+    }
+}
+
+@media (max-width:370px) {
+    .navbar {
+        font-size: 3px;
+    }
+
+    .navbar .navbar-brand img {
+        height: 6px;
+    }
+
+    .navbar .navbar-brand {
+        font-size: 3px;
+    }
+
+    .navbar .container .btn {
+        font-size: 3px;
+    }
+
+    .navbar .whiteBtn {
+        padding: 4px 10px;
+    }
+
+}

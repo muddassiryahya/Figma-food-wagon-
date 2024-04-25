@@ -4,25 +4,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logo.png">
     <title>Figma (food-wagon)</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 
 <body>
-    <div>
-        <nav class="navbar">
-            <div class="logo"><img src="images/Logo.png" alt="" height="20px"></div>
-            <div class="logo"><img src="images/Deliver Address.png" alt=""  height="20px"></div>
-            <div><img src="images/Search + Login Button.png" alt=""  height="70px"></div>
-        </nav>
-    
-        <header>
-            <div class="header-content">
-
+    <header id="home">
+        <nav class="navbar bg-body-tertiary">
+            <div class="container">
+                <a class="navbar-brand"><img src="images/logo.png"> food<span>waGon</span></a>
+                <span class="navbar-text">
+                    <b>Deliver to:</b> <i class="fa-solid fa-location-dot"></i> Current Location <b>Mohammadpur Bus Stand,
+                        Dhaka</b>
+                </span>
+                <div class="d-flex">
+                    <button class="btn me-2" type="submit"><i class="fa-solid fa-magnifying-glass"></i><b> Search Food</b></button>
+                    <button class="btn whiteBtn" type="submit"><i class="fa-solid fa-user"></i><b> Login</b></button>
+                </div>
+                    
             </div>
-        </header>
-    </div>
+        </nav>
+    </header>
+
+
+
+    <!-- <img src="images/logo.png"> food<span>wagon</span> -->
+
+
+    <!-- <b>Deliver to:<a href="images/location-icon.png"></a></b>Current Location <b>Mohammadpur Bus Stand,
+        Dhaka</b> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
